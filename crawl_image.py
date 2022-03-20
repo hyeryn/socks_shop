@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+import urllib.request
 
 import pandas as pd
 from tqdm.notebook import tqdm
@@ -18,30 +19,22 @@ driver = webdriver.Chrome(service=s)
 driver.get(url)
 time.sleep(2)
 
-date = str(input("저장날짜를 입력하세요: "))
-stop = int(input("몇 세트 크롤링 할까요?(1-11페이지가 한 세트): "))
+driver.find_element(By.CSS_SELECTOR, '#INTRODUCE')
+time.sleep(2)
 
-next_btn = ['a:nth-child(2)', 'a:nth-child(3)', 'a:nth-child(4)', 'a:nth-child(5)', 'a:nth-child(6)', 'a:nth-child(7)',
-        'a:nth-child(8)', 'a:nth-child(9)', 'a:nth-child(10)', 'a:nth-child(11)', 'a.fAUKm1ewwo._2Ar8-aEUTq']
-review_list = []
+html = driver.page_source
+soup = BeautifulSoup(html, "html.parser")
+image = soup.find_all('div',class_='se-component se-image se-l-default')
+print(image)
 
-count = 0
+# 저장할 이미지 경로 및 이름
+imageNum = 0
+imageStr = "./crawling/image/sock"
 
-while count < stop:
-    for pagenum in next_btn:
-        driver.find_element(By.CSS_SELECTOR, '#INTRODUCE > div.E-N5zuAehq detail_viewer > div > div._9F9CWn01VE > div.editor_wrap se_smartstore_wrap > div '
-                                             '> div.se-viewer se-theme-default > div.se-main-container > ')
-        time.sleep(2)
-        for i in range(0,20):
-            html = driver.page_source
-            soup = BeautifulSoup(html, "html.parser")
-            review = soup.find_all('div',class_='_1-CNpGwOcC')
-            review = review[i].text
-            review = re.sub('[^#0-9a-zA-Zㄱ-ㅣ가-힣 ]',"",review)
-            review_list.append(review)
-    count = count + 1
-
-socks = pd.DataFrame({'리뷰':review_list})
-socks.to_csv("c:/sockshopping/crawling/image/양말 데이터 " + date + '.csv', encoding='cp949')
-
-print(len(review_list))
+# 이미지 경로를 받아 로컬에 저장한다.
+for i in image:
+    imageNum += 1
+    imgURL = i.find("img")["data-src"]
+    urllib.request.urlretrieve(imgURL, imageStr + str(imageNum) + ".jpg")
+    print(imgURL)
+    print(imageNum)
