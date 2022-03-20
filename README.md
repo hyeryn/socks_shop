@@ -12,10 +12,23 @@
 ## crawl_review.py
 #### 특정 데이터 태그 크롤링
 - 레퍼런스
-1. https://blog.naver.com/yk02061/222228280467
-2. https://github.com/heemang2/PycharmProjects/blob/42de0b3b6b1c67fe08ada498cbfe8393462d9290/pythonProject/getreivewtest456.py
-3. https://blog.naver.com/angela_id/222608584687
-<br>
+1. https://blog.naver.com/yk02061/222228280467 (네이버 스토어팜 리뷰 크롤링)
+2. https://github.com/heemang2/PycharmProjects/blob/42de0b3b6b1c67fe08ada498cbfe8393462d9290/pythonProject/getreivewtest456.py (네이버 스마트스토어 리뷰 가져오기)
+3. https://blog.naver.com/angela_id/222608584687 (BeautifulSoup 데이터 크롤링)
+<br><br>
+
+## wordcloud.py
+#### csv 파일 리뷰 데이터 전처리 후 워드클라우드로 데이터 시각화
+- 1. 명사만 추출해 만든 워드 클라우드
+- 2. 형태소 단위로 추출해 만든 워드 클라우드
+- 레퍼런스
+1. https://blog.naver.com/yk02061/222262810714 (크롤링 후 전처리와 워드 클라우드)
+<br><br>
+
+## emotion_analysis.py
+- 레퍼런스
+1. https://wikidocs.net/94600 (네이버 쇼핑 리뷰 감성 분류하기)
+<br><br>
 
 ## image_data.py
 #### 이미지에서 데이터 추출
