@@ -21,8 +21,9 @@
 #### 이미지에서 데이터 추출
 - 추출 대상 이미지 : https://sockspresident.cafe24.com/product/SDSC/naver_collection/MW_Collection_list1_01.jpg
 - 레퍼런스
-1. https://devsmile.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%90%EC%84%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0-1-tesseract
-2. https://davey.tistory.com/entry/Python%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC%EC%9D%84-OCR%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%B6%94%EC%B6%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-pillow-pytesseract-%ED%8C%A8%ED%82%A4%EC%A7%80
+1. https://devsmile.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%90%EC%84%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0-1-tesseract (이미지에서 텍스트 추출)
+2. https://davey.tistory.com/entry/Python%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC%EC%9D%84-OCR%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EC%B6%94%EC%B6%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-pillow-pytesseract-%ED%8C%A8%ED%82%A4%EC%A7%80 (ORC 이용해서 텍스트 추출)
+3. https://m.blog.naver.com/os2dr/221814084743 (웹 페이지 대량의 이미지 크롤링)
 <br>
 => pillow / pytesseract 패키지 설치
 <br>
