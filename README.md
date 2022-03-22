@@ -41,6 +41,8 @@ socks_shop
 1. https://wikidocs.net/94600 (네이버 쇼핑 리뷰 감성 분류하기)
 <br><br>
 
+-----
+
 ## image_data.py
 #### 이미지에서 데이터 추출
 - 추출 대상 이미지 : https://sockspresident.cafe24.com/product/SDSC/naver_collection/MW_Collection_list1_01.jpg
@@ -66,3 +68,25 @@ socks_shop
 
 - 2. 색 구분 특정 영역 이미지 추출 (특수문자 추후 처리 필요)
 - 문제 해결 중 ..
+
+<br><br>
+
+## preprocessing_image_data.py
+#### opencv 특정 영역 인식 (checkbox)
+- 레퍼런스
+1. https://towardsdatascience.com/checkbox-table-cell-detection-using-opencv-python-332c57d25171 (체크박스 영역 인식)
+
+![image](https://user-images.githubusercontent.com/57982899/159595901-37756fe3-edbf-46e6-a537-68f1dd09fdc0.png)
+
+<br><br>
+
+## draw_image.py
+#### 해당 영역과 유사한 영역 찾기
+- 레퍼런스
+1. https://iagreebut.tistory.com/77 (이미지에서 특정 영역 찾아내기)
+
+![image](https://user-images.githubusercontent.com/57982899/159595797-adf2d72d-f85d-4e1a-b7ed-836674be77f2.png)
+
+<br><br>
+
+
