@@ -39,6 +39,7 @@ socks_shop
 ## emotion_analysis.py
 - 레퍼런스
 1. https://wikidocs.net/94600 (네이버 쇼핑 리뷰 감성 분류하기)
+
 <br><br>
 
 -----
@@ -89,5 +90,15 @@ socks_shop
 ![image](https://user-images.githubusercontent.com/57982899/159595797-adf2d72d-f85d-4e1a-b7ed-836674be77f2.png)
 
 <br><br>
+
+## image_data_final.py
+#### opencv + pytesseract 총 결합
+- 1. 이미지 처리 후 글자 추출 (pytesseract + OCR)
+- 2. 이미지 해당 영역 비교 후 데이터 추출 (opencv)
+
+<br><br>
+
+-----
+
 
 
