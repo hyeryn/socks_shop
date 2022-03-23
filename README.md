@@ -84,6 +84,7 @@ socks_shop
 #### 해당 영역과 유사한 영역 찾기
 - 레퍼런스
 1. https://iagreebut.tistory.com/77 (이미지에서 특정 영역 찾아내기)
+2. https://wjh2307.tistory.com/7 (이미지에서 특정 영역 크롭하기)
 
 ![image](https://user-images.githubusercontent.com/57982899/159595797-adf2d72d-f85d-4e1a-b7ed-836674be77f2.png)
 
