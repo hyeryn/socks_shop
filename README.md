@@ -59,6 +59,14 @@ socks_shop
 
 <br><br>
 
+## kao_ocr_image_data.py
+#### kakao에서 제공하는 광학문자인식 OCR API를 이용
+- 레퍼런스
+1. https://gimkuku0708.tistory.com/44 (Google Colab으로 OCR해보기)
+2. https://developers.kakao.com/docs/latest/ko/vision/dev-guide#ocr (Kakao OCR API)
+ 
+<br><br> 
+ 
 ## preprocessing_image_data.py
 #### opencv 이미지 전처리 후 pytesseract 로 정보 처리
 - 1. color -> grayscale -> binary 후 텍스트 정확도 상승
