@@ -104,6 +104,8 @@ socks_shop
 - 1. 이미지 처리 후 글자 추출 (pytesseract + OCR)
 - 2. 이미지 해당 영역 비교 후 데이터 추출 (opencv)
 
+![image](https://user-images.githubusercontent.com/57982899/159840012-faaf9baf-715d-46ac-a5f3-aac773632dec.png)
+
 <br><br>
 
 -----
